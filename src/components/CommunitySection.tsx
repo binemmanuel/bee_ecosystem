@@ -21,10 +21,10 @@ export default function CommunitySection() {
 
 			<div className="mt-10 md:mt-17.25 flex flex-col md:flex-row justify-center items-stretch w-full max-w-7xl mx-auto gap-6">
 				<div className="flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
-					<div className="bg-[#2B7FFF1A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
+					<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
 						<Image
-							src="/icons/building-icon.svg"
-							alt="Building Icon"
+							src="/icons/chat-icon.svg"
+							alt="Chat Icon"
 							height={18.75}
 							width={20}
 						/>
@@ -48,10 +48,10 @@ export default function CommunitySection() {
 				</div>
 
 				<div className="flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
-					<div className="bg-[#2B7FFF1A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
+					<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
 						<Image
-							src="/icons/building-icon.svg"
-							alt="Building Icon"
+							src="/icons/chat-conversation-icon.svg"
+							alt="Chat Conversation Icon"
 							height={18.75}
 							width={20}
 						/>
@@ -75,10 +75,10 @@ export default function CommunitySection() {
 				</div>
 
 				<div className="flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
-					<div className="bg-[#2B7FFF1A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
+					<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
 						<Image
-							src="/icons/building-icon.svg"
-							alt="Building Icon"
+							src="/icons/send-icon.svg"
+							alt="Send Icon"
 							height={18.75}
 							width={20}
 						/>
