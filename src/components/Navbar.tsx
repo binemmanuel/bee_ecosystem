@@ -11,7 +11,7 @@ const navItems = [
 	{ name: "Governance", href: "#" },
 ];
 
-const Navbar = () => {
+export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLangOpen, setIsLangOpen] = useState(false);
 
@@ -58,7 +58,7 @@ const Navbar = () => {
 									className="rounded-4xl px-2.5 py-1.25 gap-2.5 flex items-center justify-center text-gray-700 dark:text-gray-300 bg-[#0A0E12] hover:text-[#EDA909] font-medium"
 								>
 									<Image
-										src="/globe-new.svg"
+										src="/icons/globe-new.svg"
 										alt="Globe"
 										width={24}
 										height={24}
@@ -163,6 +163,4 @@ const Navbar = () => {
 			)}
 		</nav>
 	);
-};
-
-export default Navbar;
+}
