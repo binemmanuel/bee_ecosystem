@@ -1,3 +1,4 @@
+import CommunitySection from "@/components/CommunitySection";
 import PillarsSection from "@/components/PillarsSection";
 import GovernanceCTA from "@/components/GovernanceCTA";
 import Navbar from "@/components/Navbar";
@@ -6,12 +7,18 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
 	return (
-		<main>
-			<Navbar />
-			<Hero />
-			<Stats />
-			<PillarsSection />
-			<GovernanceCTA />
-		</main>
+		<>
+			<header>
+				<Navbar />
+				<Hero />
+				<Stats />
+			</header>
+
+			<main>
+				<PillarsSection />
+				<GovernanceCTA />
+				<CommunitySection />
+			</main>
+		</>
 	);
 }
