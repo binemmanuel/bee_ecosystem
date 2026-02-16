@@ -16,7 +16,7 @@ export default function PillarsSection() {
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-center align-center">
-					<div className="p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+					<div className="group p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 						<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center align-center rounded-[10px] mb-6">
 							<Image
 								src="/icons/home-icon.svg"
@@ -26,8 +26,15 @@ export default function PillarsSection() {
 							/>
 						</div>
 
-						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex align-center gap-2">
 							Bee Homes
+							<Image
+								src="/icons/arrow-icon.svg"
+								alt="Arrow Icon"
+								height={9.3}
+								width={9.3}
+								className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							/>
 						</h3>
 
 						<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -38,7 +45,7 @@ export default function PillarsSection() {
 				</div>
 
 				<div className="flex justify-center align-center">
-					<div className="p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+					<div className="group p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 						<div className="bg-[#2B7FFF1A] w-11 h-11 flex justify-center align-center rounded-[10px] mb-6">
 							<Image
 								src="/icons/building-icon.svg"
@@ -48,8 +55,15 @@ export default function PillarsSection() {
 							/>
 						</div>
 
-						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex align-center gap-2">
 							Bee Rentals
+							<Image
+								src="/icons/arrow-icon.svg"
+								alt="Arrow Icon"
+								height={9.3}
+								width={9.3}
+								className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							/>
 						</h3>
 
 						<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -60,7 +74,7 @@ export default function PillarsSection() {
 				</div>
 
 				<div className="flex justify-center align-center">
-					<div className="p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+					<div className="group p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 						<div className="bg-[#00C9501A] w-11 h-11 flex justify-center align-center rounded-[10px] mb-6">
 							<Image
 								src="/icons/flash-icon.svg"
@@ -70,8 +84,15 @@ export default function PillarsSection() {
 							/>
 						</div>
 
-						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex align-center gap-2">
 							Bee Energy
+							<Image
+								src="/icons/arrow-icon.svg"
+								alt="Arrow Icon"
+								height={9.3}
+								width={9.3}
+								className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							/>
 						</h3>
 
 						<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -82,7 +103,7 @@ export default function PillarsSection() {
 				</div>
 
 				<div className="flex justify-center align-center">
-					<div className="p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+					<div className="group p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 						<div className="bg-[#00B8DB1A] w-11 h-11 flex justify-center align-center rounded-[10px] mb-6">
 							<Image
 								src="/icons/plane-icon.svg"
@@ -92,8 +113,15 @@ export default function PillarsSection() {
 							/>
 						</div>
 
-						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex align-center gap-2">
 							Bee Holidays
+							<Image
+								src="/icons/arrow-icon.svg"
+								alt="Arrow Icon"
+								height={9.3}
+								width={9.3}
+								className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							/>
 						</h3>
 
 						<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -104,7 +132,7 @@ export default function PillarsSection() {
 				</div>
 
 				<div className="flex justify-center align-center">
-					<div className="p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+					<div className="group p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 						<div className="bg-[#00BC7D1A] w-11 h-11 flex justify-center align-center rounded-[10px] mb-6">
 							<Image
 								src="/icons/leaf-icon.svg"
@@ -114,8 +142,15 @@ export default function PillarsSection() {
 							/>
 						</div>
 
-						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex align-center gap-2">
 							Bee Farms & Gardens
+							<Image
+								src="/icons/arrow-icon.svg"
+								alt="Arrow Icon"
+								height={9.3}
+								width={9.3}
+								className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							/>
 						</h3>
 
 						<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -126,7 +161,7 @@ export default function PillarsSection() {
 				</div>
 
 				<div className="flex justify-center align-center">
-					<div className="p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+					<div className="group p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 						<div className="bg-[#AD46FF1A] w-11 h-11 flex justify-center align-center rounded-[10px] mb-6">
 							<Image
 								src="/icons/graduation-hat-icon.svg"
@@ -136,8 +171,15 @@ export default function PillarsSection() {
 							/>
 						</div>
 
-						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+						<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex align-center gap-2">
 							Bee Education and Health
+							<Image
+								src="/icons/arrow-icon.svg"
+								alt="Arrow Icon"
+								height={9.3}
+								width={9.3}
+								className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+							/>
 						</h3>
 
 						<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
