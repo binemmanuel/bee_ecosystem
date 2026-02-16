@@ -2,6 +2,7 @@ import CommunitySection from "@/components/CommunitySection";
 import PillarsSection from "@/components/PillarsSection";
 import GovernanceCTA from "@/components/GovernanceCTA";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Stats from "@/components/Stats";
 import Hero from "@/components/Hero";
 
@@ -19,6 +20,9 @@ export default function Home() {
 				<GovernanceCTA />
 				<CommunitySection />
 			</main>
+
+			
+			<Footer />
 		</>
 	);
 }
