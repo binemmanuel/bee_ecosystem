@@ -5,7 +5,7 @@ import NowLivePile from "./NowLivePile";
 
 export default function Hero() {
 	return (
-		<div className="relative h-[90vh] text-white flex flex-1 items-center justify-center flex-col gap-8.75">
+		<section className="relative h-[90vh] text-white flex flex-1 items-center justify-center flex-col gap-8.75">
 			<HeroBackground />
 
 			<NowLivePile />
@@ -13,6 +13,6 @@ export default function Hero() {
 			<HeadingAndTagline />
 
 			<HeroActions />
-		</div>
+		</section>
 	);
 }
