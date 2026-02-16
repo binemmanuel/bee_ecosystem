@@ -20,7 +20,7 @@ export default function CommunitySection() {
 			</p>
 
 			<div className="mt-10 md:mt-17.25 flex flex-col md:flex-row justify-center items-stretch w-full max-w-7xl mx-auto gap-6">
-				<div className="flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+				<div className="group flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 					<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
 						<Image
 							src="/icons/chat-icon.svg"
@@ -30,8 +30,15 @@ export default function CommunitySection() {
 						/>
 					</div>
 
-					<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+					<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex items-center gap-2">
 						Community Forum
+						<Image
+							src="/icons/arrow-icon.svg"
+							alt="Arrow Icon"
+							height={9.3}
+							width={9.3}
+							className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+						/>
 					</h3>
 
 					<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -41,13 +48,13 @@ export default function CommunitySection() {
 
 					<button
 						type="button"
-						className="text-[15px] text-center font-semibold border border-[#1F1F1F] w-full mt-5 py-3 rounded-[10px]"
+						className="text-[15px] text-center font-semibold border border-[#1F1F1F] w-full mt-5 py-3 rounded-[10px] hover:bg-[#EDA909] hover:text-black transition-colors cursor-pointer"
 					>
 						Visit Forum
 					</button>
 				</div>
 
-				<div className="flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+				<div className="group flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 					<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
 						<Image
 							src="/icons/chat-conversation-icon.svg"
@@ -57,8 +64,15 @@ export default function CommunitySection() {
 						/>
 					</div>
 
-					<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+					<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex items-center gap-2">
 						Live Chat
+						<Image
+							src="/icons/arrow-icon.svg"
+							alt="Arrow Icon"
+							height={9.3}
+							width={9.3}
+							className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+						/>
 					</h3>
 
 					<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
@@ -68,13 +82,13 @@ export default function CommunitySection() {
 
 					<button
 						type="button"
-						className="text-[15px] text-center font-semibold border border-[#1F1F1F] w-full mt-5 py-3 rounded-[10px]"
+						className="text-[15px] text-center font-semibold border border-[#1F1F1F] w-full mt-5 py-3 rounded-[10px] hover:bg-[#EDA909] hover:text-black transition-colors cursor-pointer"
 					>
 						Join Discord
 					</button>
 				</div>
 
-				<div className="flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px]">
+				<div className="group flex-1 p-6 border border-gray-200 dark:border-[#1F1F1F] bg-white dark:bg-[#0A0E12] rounded-[15px] hover:border-[#EDA909] transition-colors duration-300">
 					<div className="bg-[#EDA9091A] w-11 h-11 flex justify-center items-center rounded-[10px] mb-6">
 						<Image
 							src="/icons/send-icon.svg"
@@ -84,8 +98,15 @@ export default function CommunitySection() {
 						/>
 					</div>
 
-					<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%]">
+					<h3 className="mb-6 text-gray-900 dark:text-white font-semibold text-[23px] leading-[100%] flex items-center gap-2">
 						Newsletter
+						<Image
+							src="/icons/arrow-icon.svg"
+							alt="Arrow Icon"
+							height={9.3}
+							width={9.3}
+							className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+						/>
 					</h3>
 
 					<p className="text-[14px] text-gray-600 dark:text-[#948D8D] leading-5.25">
