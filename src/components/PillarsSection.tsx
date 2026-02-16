@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PillarsSection() {
 	return (
-		<div className="py-32.5 font-['Geist'] tracking-[0] flex flex-col justify-center align-center">
+		<section className="py-32.5 font-['Geist'] tracking-[0] flex flex-col justify-center align-center">
 			<h3 className=" font-bold text-[40px] leading-12.5 text-center">
 				Six Pillars of the Ecosystem
 			</h3>
@@ -147,6 +147,6 @@ export default function PillarsSection() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
