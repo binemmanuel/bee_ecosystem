@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Stats from "@/components/Stats";
 import Hero from "@/components/Hero";
 
-export default function Home() {
+export default function HomePage() {
 	return (
 		<>
 			<header>
@@ -21,7 +21,6 @@ export default function Home() {
 				<CommunitySection />
 			</main>
 
-			
 			<Footer />
 		</>
 	);
