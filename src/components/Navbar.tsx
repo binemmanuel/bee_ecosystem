@@ -2,24 +2,30 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
-	{ name: "Presale", href: "#" },
-	{ name: "Staking", href: "#" },
+	{ name: "Presale", href: "/presale" },
+	{ name: "Staking", href: "/staking" },
 	{ name: "BeeMap", href: "#" },
-	{ name: "Forum", href: "#" },
-	{ name: "Governance", href: "#" },
+	{ name: "Forum", href: "/forum" },
+	{ name: "Governance", href: "/governance" },
 ];
 
 export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLangOpen, setIsLangOpen] = useState(false);
+	const pathname = usePathname();
 
 	return (
 		<nav className="shadow-sm sticky top-0 z-50 bg-white dark:bg-[#05070A] border-b border-b-[#1F1F1F]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between h-16">
-					<div className="shrink-0 flex items-center gap-2.5">
+					<Link
+						href="/"
+						className="shrink-0 flex items-center gap-2.5"
+					>
 						<Image
 							src="/logo.svg"
 							alt="Logo"
@@ -29,18 +35,22 @@ export default function Navbar() {
 						<span className="font-bold text-[20px] text-black dark:text-white">
 							Bee Ecosystem DAO
 						</span>
-					</div>
+					</Link>
 
 					<div className="hidden md:flex md:items-center md:gap-x-6 lg:gap-x-12 xl:gap-x-28">
 						<div>
 							{navItems.map((item) => (
-								<a
+								<Link
 									key={item.name}
 									href={item.href}
-									className="text-gray-700 dark:text-gray-300 hover:text-[#EDA909] px-4.5 py-2.5 text-sm font-medium transition-colors text-[15px]"
+									className={`${
+										pathname === item.href
+											? "text-[#EDA909]"
+											: "text-gray-700 dark:text-gray-300"
+									} hover:text-[#EDA909] px-4.5 py-2.5 text-sm font-medium transition-colors text-[15px]`}
 								>
 									{item.name}
-								</a>
+								</Link>
 							))}
 						</div>
 
@@ -129,13 +139,18 @@ export default function Navbar() {
 				<div className="md:hidden" id="mobile-menu">
 					<div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
 						{navItems.map((item) => (
-							<a
+							<Link
 								key={item.name}
 								href={item.href}
-								className="text-gray-700 dark:text-gray-300 hover:text-[#EDA909] block px-3 py-2 rounded-md text-base font-medium"
+								onClick={() => setIsMenuOpen(false)}
+								className={`${
+									pathname === item.href
+										? "text-[#EDA909]"
+										: "text-gray-700 dark:text-gray-300"
+								} hover:text-[#EDA909] block px-3 py-2 rounded-md text-base font-medium`}
 							>
 								{item.name}
-							</a>
+							</Link>
 						))}
 
 						<button
