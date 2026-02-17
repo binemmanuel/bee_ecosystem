@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function StakingPage() {
 	const pools = [
 		{
-			image: "/background-1.png", // Using existing image as placeholder
+			image: "/background-1.png",
 			category: "Homes",
 			apr: "12.5%",
 			title: "Bee Homes Pool",
@@ -36,14 +36,14 @@ export default function StakingPage() {
 			lockPeriod: "30d",
 			tvl: "2.4M P-NECTR",
 			location: "Total Value Locked",
-			locationValue: "2.4M P-NECTR", // Image shows this layout slightly different for Energy pool
+			locationValue: "2.4M P-NECTR",
 			pendingRewards: "+125.4705 P-NECTR",
 		},
 		{
 			image: "/background-1.png",
 			category: "Rental",
 			apr: "12.5%",
-			title: "Bee Homes Pool", // Image says Bee Homes Pool again, maybe typo in design or just example
+			title: "Bee Homes Pool",
 			minStake: "100 P-NECTR",
 			lockPeriod: "30d",
 			tvl: "2.4M P-NECTR",
@@ -91,7 +91,10 @@ export default function StakingPage() {
 
 	return (
 		<div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white font-['Geist'] transition-colors duration-300">
-			<Navbar />
+			<header>
+				<Navbar />
+			</header>
+
 			<main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 				<StakingHeader />
 				<StakingStats />
@@ -102,12 +105,14 @@ export default function StakingPage() {
 							<StakingPoolCard key={index} {...pool} />
 						))}
 					</div>
+					
 					<div className="lg:col-span-1">
 						<RewardsPot />
 						<RewardsList />
 					</div>
 				</div>
 			</main>
+
 			<Footer />
 		</div>
 	);
