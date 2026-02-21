@@ -4,10 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ElevatedButton from "./buttons/ElevatedButton";
 
 const navItems = [
 	{ name: "Presale", href: "/presale" },
 	{ name: "Staking", href: "/staking" },
+	{ name: "Marketplace", href: "/marketplace" },
 	{ name: "BeeMap", href: "#" },
 	{ name: "Forum", href: "/forum" },
 	{ name: "Governance", href: "/governance" },
@@ -37,69 +39,62 @@ export default function Navbar() {
 						</span>
 					</Link>
 
-					<div className="hidden md:flex md:items-center md:gap-x-6 lg:gap-x-12 xl:gap-x-28">
-						<div>
-							{navItems.map((item) => (
-								<Link
-									key={item.name}
-									href={item.href}
-									className={`${
-										pathname === item.href
-											? "text-[#EDA909]"
-											: "text-gray-700 dark:text-gray-300"
-									} hover:text-[#EDA909] px-4.5 py-2.5 text-sm font-medium transition-colors text-[15px]`}
-								>
-									{item.name}
-								</Link>
-							))}
-						</div>
-
-						<div className="flex items-center gap-3.75">
-							<button
-								type="button"
-								className="rounded-[10px] px-4.5 py-3 gap-2.5 bg-[#EDA909] text-black font-bold flex items-center justify-center cursor-pointer"
+					<div className="hidden md:flex items-center">
+						{navItems.map((item) => (
+							<Link
+								key={item.name}
+								href={item.href}
+								className={`${
+									pathname === item.href
+										? "text-[#EDA909]"
+										: "text-gray-700 dark:text-gray-300"
+								} hover:text-[#EDA909] px-4.5 py-2.5 text-sm font-medium transition-colors text-[15px]`}
 							>
-								Connect Wallet
+								{item.name}
+							</Link>
+						))}
+					</div>
+
+					<div className="hidden md:flex items-center gap-3.75">
+						<ElevatedButton>Connect Wallet</ElevatedButton>
+
+						<div className="relative">
+							<button
+								onClick={() => setIsLangOpen(!isLangOpen)}
+								className="rounded-4xl px-2.5 py-1.25 gap-2.5 flex items-center justify-center text-gray-700 dark:text-gray-300 bg-[#0A0E12] hover:text-[#EDA909] font-medium"
+							>
+								<Image
+									src="/icons/globe-new.svg"
+									alt="Globe"
+									width={24}
+									height={24}
+									className="w-6 h-6 text-white"
+								/>
+								<span>EN</span>
 							</button>
 
-							<div className="relative">
-								<button
-									onClick={() => setIsLangOpen(!isLangOpen)}
-									className="rounded-4xl px-2.5 py-1.25 gap-2.5 flex items-center justify-center text-gray-700 dark:text-gray-300 bg-[#0A0E12] hover:text-[#EDA909] font-medium"
-								>
-									<Image
-										src="/icons/globe-new.svg"
-										alt="Globe"
-										width={24}
-										height={24}
-										className="w-6 h-6 text-white"
-									/>
-									<span>EN</span>
-								</button>
-
-								{isLangOpen && (
-									<div className="absolute right-0 mt-2 w-24 bg-white dark:bg-gray-900 rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5 z-50">
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-[#EDA909] hover:text-black"
-										>
-											EN
-										</a>
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-[#EDA909] hover:text-black"
-										>
-											ES
-										</a>
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-[#EDA909] hover:text-black"
-										>
-											FR
-										</a>
-									</div>
-								)}
-							</div>
+							{isLangOpen && (
+								<div className="absolute right-0 mt-2 w-24 bg-white dark:bg-gray-900 rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5 z-50">
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-[#EDA909] hover:text-black"
+									>
+										EN
+									</a>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-[#EDA909] hover:text-black"
+									>
+										ES
+									</a>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-[#EDA909] hover:text-black"
+									>
+										FR
+									</a>
+								</div>
+							)}
 						</div>
 					</div>
 					<div className="flex items-center md:hidden">
